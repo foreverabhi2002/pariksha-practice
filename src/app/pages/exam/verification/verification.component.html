@@ -1,0 +1,42 @@
+<div class="background">
+
+  
+  
+  
+ 
+
+  <table class="all">
+    <tr *ngIf="!isClicked">
+      <td >
+        <video #videoElement autoplay width="640" height="480"></video>
+      </td>
+    </tr>
+    <tr *ngIf="isClicked">
+      <td>
+        <img id="photo" [src]="image" width="640" height="480">
+      </td>
+    </tr>
+    <tr *ngIf="!isClicked">
+      <td>
+        <button class="captureBtn" (click)="capture()">Capture</button>
+      </td>
+    </tr>
+    <tr *ngIf="isClicked">
+      <td>
+        <button class="retakeBtn" (click)="retake()">Retake</button>
+      </td>
+    </tr>
+    <tr *ngIf="isClicked">
+      <td>
+        <button class="launchBtn" (click)="LaunchExam()">Confirm</button>
+      </td>
+    </tr>
+  </table>
+
+
+  <!-- <button (click)="ClickPhoto()">Click Photo</button> -->
+
+
+
+
+</div>

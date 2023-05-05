@@ -1,0 +1,15 @@
+<td>
+  <div class="cardBorder">
+    <div class="card">
+      <h1 class="cardHeading">{{ title }}</h1>
+      <h5>+{{ completed }} others completed...</h5>
+      <button
+        class="startBtn"
+        [routerLink]="'/mock-test/' + tId"
+        (click)="click()"
+      >
+        Start
+      </button>
+    </div>
+  </div>
+</td>
